@@ -101,38 +101,30 @@
 
 
   
-  <meta name="keywords" content="HTTP," />
+  <meta name="keywords" content="工具论," />
 
 
-<meta name="description" content="HTTP 2.0 的出现，相比于 HTTP 1.x ，大幅度的提升了 web 性能。在与 HTTP/1.1 完全语义兼容的基础上，进一步减少了网络延迟。而对于前端开发人员来说，无疑减少了在前端方面的优化工作。本文将对 HTTP 2.0 协议 个基本技术点进行总结，联系相关知识，探索 HTTP 2.0 是如何提高性能的。">
-<meta name="keywords" content="HTTP">
+<meta name="description" content="时代在发展，工具在进步。">
+<meta name="keywords" content="工具论">
 <meta property="og:type" content="article">
-<meta property="og:title" content="初探 HTTP 2.0">
-<meta property="og:url" content="https://code.leozhang2018.me/2015/12/04/初探 HTTP 2.0/index.html">
+<meta property="og:title" content="我在用什么">
+<meta property="og:url" content="https://code.leozhang2018.me/2018/05/07/我在用什么/index.html">
 <meta property="og:site_name" content="leozhang2018">
-<meta property="og:description" content="HTTP 2.0 的出现，相比于 HTTP 1.x ，大幅度的提升了 web 性能。在与 HTTP/1.1 完全语义兼容的基础上，进一步减少了网络延迟。而对于前端开发人员来说，无疑减少了在前端方面的优化工作。本文将对 HTTP 2.0 协议 个基本技术点进行总结，联系相关知识，探索 HTTP 2.0 是如何提高性能的。">
+<meta property="og:description" content="时代在发展，工具在进步。">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:image" content="https://dn-shimo-image.qbox.me/9FAfPo30yowoVtnj.jpg">
-<meta property="og:image" content="https://dn-shimo-image.qbox.me/7Y5BwD8jdc4yvACV.png">
-<meta property="og:image" content="https://dn-shimo-image.qbox.me/Spsyn93ITa0UUVBd.png">
-<meta property="og:image" content="https://dn-shimo-image.qbox.me/2SPfSk7ZWK0CUE7V.png">
-<meta property="og:image" content="https://dn-shimo-image.qbox.me/e8t8oSFMXUISChWw.png">
-<meta property="og:image" content="https://dn-shimo-image.qbox.me/YsBmFjnMadIM1hDC.png">
-<meta property="og:image" content="https://dn-shimo-image.qbox.me/BfGioYEpGsgAItJN.jpg">
-<meta property="og:image" content="https://dn-shimo-image.qbox.me/pKVstCqBe9USDhxO.png">
-<meta property="og:image" content="https://dn-shimo-image.qbox.me/DEcddq44Fnw4LxPW.png">
-<meta property="og:updated_time" content="2018-04-16T17:52:33.173Z">
+<meta property="og:image" content="https://dn-leozhang2018.qbox.me/mac.jpg?imageView2/1/format/webp">
+<meta property="og:updated_time" content="2018-05-07T14:59:31.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="初探 HTTP 2.0">
-<meta name="twitter:description" content="HTTP 2.0 的出现，相比于 HTTP 1.x ，大幅度的提升了 web 性能。在与 HTTP/1.1 完全语义兼容的基础上，进一步减少了网络延迟。而对于前端开发人员来说，无疑减少了在前端方面的优化工作。本文将对 HTTP 2.0 协议 个基本技术点进行总结，联系相关知识，探索 HTTP 2.0 是如何提高性能的。">
-<meta name="twitter:image" content="https://dn-shimo-image.qbox.me/9FAfPo30yowoVtnj.jpg">
+<meta name="twitter:title" content="我在用什么">
+<meta name="twitter:description" content="时代在发展，工具在进步。">
+<meta name="twitter:image" content="https://dn-leozhang2018.qbox.me/mac.jpg?imageView2/1/format/webp">
 
 
 
 
 
 
-  <link rel="canonical" href="https://code.leozhang2018.me/2015/12/04/初探 HTTP 2.0/"/>
+  <link rel="canonical" href="https://code.leozhang2018.me/2018/05/07/我在用什么/"/>
 
 
 
@@ -141,7 +133,7 @@
     sidebar: "",
   };
 </script>
-  <title>初探 HTTP 2.0 | leozhang2018</title>
+  <title>我在用什么 | leozhang2018</title>
   
 
 
@@ -288,7 +280,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://code.leozhang2018.me/2015/12/04/初探 HTTP 2.0/">
+    <link itemprop="mainEntityOfPage" href="https://code.leozhang2018.me/2018/05/07/我在用什么/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="leozhang2018">
@@ -305,7 +297,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">初探 HTTP 2.0</h1>
+          <h1 class="post-title" itemprop="name headline">我在用什么</h1>
         
 
         <div class="post-meta">
@@ -317,7 +309,7 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2015-12-04T20:00:25+08:00">2015-12-04</time>
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-05-07T08:00:25+08:00">2018-05-07</time>
             
 
             
@@ -354,33 +346,134 @@
       
 
       
-        <p><img src="https://dn-shimo-image.qbox.me/9FAfPo30yowoVtnj.jpg" alt="此处输入图片的描述"></p>
-<p>HTTP 2.0 的出现，相比于 HTTP 1.x ，大幅度的提升了 web 性能。在与 HTTP/1.1 完全语义兼容的基础上，进一步减少了网络延迟。而对于前端开发人员来说，无疑减少了在前端方面的优化工作。本文将对 HTTP 2.0 协议 个基本技术点进行总结，联系相关知识，探索 HTTP 2.0 是如何提高性能的。</p>
+        <p><img src="https://dn-leozhang2018.qbox.me/mac.jpg?imageView2/1/format/webp" alt="H2frame"></p>
+<p>时代在发展，工具在进步。</p>
 <a id="more"></a>
-<p>###<strong>初露锋芒</strong><br><a href="https://http2.akamai.com/demo" target="_blank" rel="noopener">https://http2.akamai.com/demo</a> 这是 Akamai 公司建立的一个官方的演示，用以说明 HTTP/2 相比于之前的 HTTP/1.1 在性能上的大幅度提升。 同时请求 379 张图片，从Load time 的对比可以看出 HTTP/2 在速度上的优势。</p>
-<p><img src="https://dn-shimo-image.qbox.me/7Y5BwD8jdc4yvACV.png" alt="akamai"></p>
-<p>此时如果我们打开 Chrome Developer Tools 查看 Network 一栏可以发现，HTTP/2 在网络请求方面与 HTTP /1.1的明显区别。<br>HTTP/1:</p>
-<p><img src="https://dn-shimo-image.qbox.me/Spsyn93ITa0UUVBd.png" alt="Chrome-network"></p>
-<p>HTTP/2:<br><img src="https://dn-shimo-image.qbox.me/2SPfSk7ZWK0CUE7V.png" alt="此处输入图片的描述"></p>
-<p>###<strong>多路复用 (Multiplexing)</strong><br><strong>多路复用允许同时通过单一的 HTTP/2 连接发起多重的请求-响应消息。</strong></p>
-<p>众所周知 ，在  HTTP/1.1 协议中 「浏览器客户端在同一时间，针对同一域名下的请求有一定数量限制。超过限制数目的请求会被阻塞」。</p>
-<pre><code>Clients that use persistent connections SHOULD limit the number of simultaneous connections that they maintain to a given server. A single-user client SHOULD NOT maintain more than 2 connections with any server or proxy. A proxy SHOULD use up to 2*N connections to another server or proxy, where N is the number of simultaneously active users. These guidelines are intended to improve HTTP response times and avoid congestion.
-</code></pre><p>来源：RFC-2616-8.1.4 Practical Considerations<br><a href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec8.html#sec8.1.4" target="_blank" rel="noopener">http://www.w3.org/Protocols/rfc2616/rfc2616-sec8.html#sec8.1.4</a></p>
-<p>该图总结了不同浏览器对该限制的数目。<br><img src="https://dn-shimo-image.qbox.me/e8t8oSFMXUISChWw.png" alt="此处输入图片的描述"></p>
-<p>来源:<br><a href="http://www.stevesouders.com/blog/2008/03/20/roundup-on-parallel-connections/" target="_blank" rel="noopener">http://www.stevesouders.com/blog/2008/03/20/roundup-on-parallel-connections/</a></p>
-<p>这也是为何一些站点会有多个静态资源 CDN 域名的原因之一，拿 Twitter 为例，<a href="http://twimg.com" target="_blank" rel="noopener">http://twimg.com</a> ，目的就是变相的解决浏览器针对同一域名的请求限制阻塞问题。<br>而 HTTP/2 的多路复用(Multiplexing) 则允许同时通过单一的 HTTP/2 连接发起多重的<strong>请求-响应</strong>消息。</p>
-<p><img src="https://dn-shimo-image.qbox.me/YsBmFjnMadIM1hDC.png" alt="Multiplexing"></p>
-<p>因此 HTTP/2 可以很容易的去实现多流并行而不用依赖建立多个 TCP 连接，HTTP/2 把 HTTP 协议通信的基本单位缩小为一个一个的帧，这些帧对应着逻辑流中的消息。并行地在同一个 TCP 连接上<strong>双向交换</strong>消息。</p>
-<p>###<strong>二进制分帧</strong><br>在不改动 HTTP/1.x 的语义、方法、状态码、URI 以及首部字段….. 的情况下, HTTP/2 是如何做到「突破 HTTP1.1 的性能限制，改进传输性能，实现低延迟和高吞吐量」的 ?<br>关键之一就是在 应用层(HTTP/2)和传输层(TCP or UDP)之间增加一个二进制分帧层。<br><img src="https://dn-shimo-image.qbox.me/BfGioYEpGsgAItJN.jpg" alt="此处输入图片的描述"></p>
-<p>在二进制分帧层中， HTTP/2 会将所有传输的信息分割为更小的消息和帧（frame）,并对它们采用二进制格式的编码 ，其中 HTTP1.x 的首部信息会被封装到 HEADER frame，而相应的 Request Body 则封装到 DATA frame 里面。<br>HTTP/2 通信都在一个连接上完成，这个连接可以承载任意数量的双向数据流。<br>在过去， HTTP 性能优化的<strong>关键并不在于高带宽</strong>，而是<strong>低延迟</strong>。TCP 连接会随着时间进行自我「调谐」，起初会限制连接的最大速度，如果数据成功传输，会随着时间的推移提高传输的速度。这种调谐则被称为 TCP 慢启动。由于这种原因，让原本就具有突发性和短时性的 HTTP 连接变的十分低效。<br>HTTP/2 通过让所有数据流共用同一个连接，可以更有效地使用 TCP 连接，让高带宽也能真正的服务于 HTTP 的性能提升。</p>
-<p>总结：</p>
-<ul>
-<li>单连接多资源的方式，减少服务端的链接压力,内存占用更少,连接吞吐量更大 </li>
-<li>由于 TCP 连接的减少而使网络拥塞状况得以改善，同时慢启动时间的减少,使拥塞和丢包恢复速度更快</li>
+<h2 id="硬件篇"><a href="#硬件篇" class="headerlink" title="硬件篇"></a>硬件篇</h2><ul>
+<li><p>MacBook Pro (15-inch, 2017)</p>
+</li>
+<li><p>iMac 5K Retina</p>
+</li>
+<li><p>OnePlus 3 吃奥利奥</p>
+</li>
+<li><p>Mix2 体验全面屏</p>
+</li>
+<li><p>ATH-M50X BK </p>
+</li>
+<li><p>ATH LS50</p>
+</li>
 </ul>
-<p><img src="https://dn-shimo-image.qbox.me/pKVstCqBe9USDhxO.png" alt="此处输入图片的描述"></p>
-<p>###<strong>首部压缩（Header Compression）</strong><br>HTTP/1.1并不支持 HTTP 首部压缩，为此 SPDY 和 HTTP/2 应运而生， SPDY 使用的是通用的 <a href="https://en.wikipedia.org/wiki/DEFLATE" target="_blank" rel="noopener">DEFLATE</a> 算法，而 HTTP/2 则使用了专门为首部压缩而设计的 <a href="http://http2.github.io/http2-spec/compression.html" target="_blank" rel="noopener">HPACK</a> 算法。<br><img src="https://dn-shimo-image.qbox.me/DEcddq44Fnw4LxPW.png" alt="此处输入图片的描述"></p>
-<p>###<strong>服务端推送（Server Push）</strong><br>服务端推送是一种在客户端请求之前发送数据的机制。在 HTTP/2 中，服务器可以对客户端的一个请求发送多个响应。Server Push 让 HTTP1.x 时代使用内嵌资源的优化手段变得没有意义；如果一个请求是由你的主页发起的，服务器很可能会响应主页内容、logo 以及样式表，因为它知道客户端会用到这些东西。这相当于在一个 HTML 文档内集合了所有的资源，不过与之相比，服务器推送还有一个很大的优势：可以缓存！也让在遵循同源的情况下，不同页面之间可以共享缓存资源成为可能。</p>
+<h2 id="影音"><a href="#影音" class="headerlink" title="影音"></a>影音</h2><ul>
+<li><p>MPV + youGet + youtube-dl + Aria2 + 七牛云存储 + Filerun 一套私人流媒体组合拳</p>
+</li>
+<li><p>IINA</p>
+</li>
+</ul>
+<h2 id="开发和效率"><a href="#开发和效率" class="headerlink" title="开发和效率"></a>开发和效率</h2><ul>
+<li><p>VScode Atom Sublime 按使用度排序，字体选择 Monaco，统一主题为 Dracula</p>
+</li>
+<li><p>Terminal 为 iTerm + oh-my-zsh 组合</p>
+</li>
+<li><p>NVM 进行 Node 版本管理</p>
+</li>
+<li><p>Homebrew 进行包管理，在不使用 Apple DNS 时通过 Mas 更快的下载 App Store 应用</p>
+</li>
+<li><p>默认使用 VScode 内置版本管理插件</p>
+</li>
+<li><p>Alfred, 常用的 Workflow 包括：Dash 进行文本搜索、Terminal Finder 进行 Finder 和 Terminal 的相互打开、httpstat 可视化 curl 命令</p>
+</li>
+<li><p>使用 Mackup 配合 Dropbox 管理环境配置</p>
+</li>
+</ul>
+<h2 id="设计与原型"><a href="#设计与原型" class="headerlink" title="设计与原型"></a>设计与原型</h2><ul>
+<li><p>Avocode 进行设计稿的标注和切图（目前为止个人用的最佳标注工具）</p>
+</li>
+<li><p>Sip 作为全局取色工具</p>
+</li>
+</ul>
+<h2 id="流程"><a href="#流程" class="headerlink" title="流程"></a>流程</h2><ul>
+<li>使用 Xmind 画流程图，其实更偏爱新的 Xmind:Zen</li>
+</ul>
+<h2 id="备份与存储"><a href="#备份与存储" class="headerlink" title="备份与存储"></a>备份与存储</h2><ul>
+<li><p>使用 Dropbox 进行重要数据同步与备份</p>
+</li>
+<li><p>硬件上通过 Seagate Backup Plus 不定期备份</p>
+</li>
+</ul>
+<h2 id="API-与-网络调试"><a href="#API-与-网络调试" class="headerlink" title="API 与 网络调试"></a>API 与 网络调试</h2><ul>
+<li><p>以前用 Postman，现在是 Paw 进行请求模拟</p>
+</li>
+<li><p>Charles HTTP 层抓包，必要时会搬出 Wireshark</p>
+</li>
+</ul>
+<h2 id="记录"><a href="#记录" class="headerlink" title="记录"></a>记录</h2><ul>
+<li>Waka Time 配合 VScode Atom Sublime</li>
+</ul>
+<h2 id="文档"><a href="#文档" class="headerlink" title="文档"></a>文档</h2><ul>
+<li><p>使用石墨文档进行一些文档的管理和分享</p>
+</li>
+<li><p>使用 Typora 作为常用的 Markdown 编辑客户端</p>
+</li>
+</ul>
+<h2 id="密码"><a href="#密码" class="headerlink" title="密码"></a>密码</h2><ul>
+<li><p>1password ，最近在使用 1password 7</p>
+</li>
+<li><p>在 Android 端，我选择使用 msecure 更轻量 </p>
+</li>
+</ul>
+<h2 id="碎片化阅读"><a href="#碎片化阅读" class="headerlink" title="碎片化阅读"></a>碎片化阅读</h2><ul>
+<li><p>Instapaper 老用户，移动端使用了有几年</p>
+</li>
+<li><p>使用 Feedly 订阅 RSS 流</p>
+</li>
+<li><p>Hacknews</p>
+</li>
+</ul>
+<h2 id="IM-与社交"><a href="#IM-与社交" class="headerlink" title="IM 与社交"></a>IM 与社交</h2><ul>
+<li><p>WeChat + Telegram + Tim</p>
+</li>
+<li><p>心情好时会用 Path</p>
+</li>
+<li><p>Instagram 关注了只 🐈</p>
+</li>
+<li><p>Google+ 不定期去 Linux community 看看热闹</p>
+</li>
+</ul>
+<h2 id="信息流"><a href="#信息流" class="headerlink" title="信息流"></a>信息流</h2><ul>
+<li>IFTTT</li>
+</ul>
+<h2 id="科学上网"><a href="#科学上网" class="headerlink" title="科学上网"></a>科学上网</h2><ul>
+<li><p>目前使用 Bandwagonhost 性价比最佳，早些年用过 DigitalOcean、Vultr 线路质量目前在国内的网络环境下非常不乐观</p>
+</li>
+<li><p>推荐家科学上网套餐提供商：优越加速（截止至 2018/5/7）</p>
+</li>
+<li><p>云梯 RIP，包老板（kgen）现在应该还没出来， a tweet a day now no tweet</p>
+</li>
+</ul>
+<h2 id="Chrome-Extensions"><a href="#Chrome-Extensions" class="headerlink" title="Chrome Extensions"></a>Chrome Extensions</h2><ul>
+<li><p>Momentum </p>
+</li>
+<li><p>Vue DevTools 调试 Vue 应用必备 </p>
+</li>
+<li><p>Redux DevTools 调试 React 应用必备</p>
+</li>
+<li><p>Proxy SwitchyOmega 快捷地管理和切换多个代理设置，可实现在线页面本地调试</p>
+</li>
+<li><p>1Password 1Password 的扩展</p>
+</li>
+<li><p>Tampermonkey  油猴脚本，插件化浏览器必备</p>
+</li>
+<li><p>Instapaper</p>
+</li>
+<li><p>oneTab 快速整理标签页，减轻标签页混乱</p>
+</li>
+<li><p>Wappalyzer 快速识别网站用了哪些技术</p>
+</li>
+<li><p>Vimium 在浏览器里使用键盘操作， hacker 必备</p>
+</li>
+<li><p>Emmet Re:view 模拟不同 viewport 方便调试移动端网页</p>
+</li>
+</ul>
 
       
     </div>
@@ -398,7 +491,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/HTTP/" rel="tag"># HTTP</a>
+            <a href="/tags/工具论/" rel="tag"># 工具论</a>
           
         </div>
       
@@ -411,8 +504,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2015/07/15/Fixing npm permissions/" rel="next" title="Fixing npm permissions">
-                <i class="fa fa-chevron-left"></i> Fixing npm permissions
+              <a href="/2016/10/08/HTTP 2 基本帧说明/" rel="next" title="HTTP/2 基本帧说明">
+                <i class="fa fa-chevron-left"></i> HTTP/2 基本帧说明
               </a>
             
           </div>
@@ -420,10 +513,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2016/03/07/面向初学者的前端性能优化集锦/" rel="prev" title="面向初学者的前端性能优化集锦">
-                面向初学者的前端性能优化集锦 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
